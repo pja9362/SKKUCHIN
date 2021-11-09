@@ -32,11 +32,11 @@ body {
 
 /* Sidebar */
 .sidebar {
-    margin-left: 76.6%;
+    margin-left: 80%;
     margin-top: 50px;
     background-color: #3f4145;
     position: absolute;
-    width: 250px;
+    width: 20%;
     height: 100%;
     transition: transform .3s ease-in-out;
     transform: translateX(+250px);
