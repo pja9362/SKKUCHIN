@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/* 폰트, 박스사이즈 포함 기본 틀 */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: block;
+}
+body h4{
+    text-align: center;
+    align-items: center;
+}
+#checkbox, .btn span { /* Hide the checkbox input & word "Menu" in the button */
+  display: none;
+}
+
+
+/* Menu 버튼 */
+.btn {
+    display: block;
+    position: absolute;
+    color: #eda11e;
+    cursor: pointer;
+    padding-left: 5%;
+    transition: width .3s ease-in-out;
+}
+
+
+/* Sidebar */
+.sidebar {
+    margin-top:0%;
+    background-color: #3f4145;
+    position: fixed;
+    width: 45%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-130%);
+    left: 0;
+}
+
+/* Sidebar - 메뉴항목 리스트 틀  */
+.sidebar ul {
+    padding: 1%;
+    margin: 0;
+    list-style-type: none;
+}
+/* Sidebar - 메뉴 개별항목 (마이페이지/밥사줄게/밥사주세요/채팅함) */
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: #BAB5BD;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+/* Sidebar - 메뉴 개별항목 활성화 후 */
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color: #21242b;
+    color: #fff;
+}
+
+/* Sidebar - 메뉴 개별항목 활성화 전 */
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #e16d25;
+    width: 4px;
+    height: 100%;
+}
+
+/* 체크박스, 메뉴 버튼 */
+/* #checkbox:checked + .btn {
+    width: 250px;
+    padding: 0 20px;
+} */
+
+/* 메뉴 아이콘 클릭-> 체크버튼 활성화 -> 사이드바 슬라이드 */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
