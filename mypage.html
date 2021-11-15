@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./mypage.css">
+</head>
+<body>
+    <!-- 체크박스 + 아이콘 활용 -->
+    <input type="checkbox" id="checkbox">
+    <label class="btn" for="checkbox"><i class="fa fa-bars" style="font-size: 20px"></i></label> 
+    <div class="title"><h4>마이페이지</h4></div>
+
+     <!-- sidebar, list -->
+    <div class="sidebar">
+        <input type="checkbox" id="checkbox">
+        <label class="btn" for="checkbox"><i class="fa fa-times-circle" aria-hidden="true" style="font-size: 20px"></i></label>
+        <!--프로필 (이미지, 이름)-->
+        <div class="my_info">
+            <div class="profile_img">
+                <img src="img/꾸실이.png" alt="은행이_img" style="width=100%; height=100%; border-radius=30%;">
+            <h3>진아님</h3>
+            </div>
+        </div>
+        <!--게시판 목록-->
+        <ul>
+            <a href="Bobwithme.html"><li><i class="fa fa-cutlery" aria-hidden="true"></i>밥약게시판</li></a>
+            <a href="chat.html"><li><i class="fa fa-comments" aria-hidden="true"></i>채팅함</li></a>
+            <a href="mypage.html"><li><i class="fa fa-user" aria-hidden="true"></i>마이페이지</li></a>
+        </ul>
+    </div>
+    
+</body>
+
+</html>
