@@ -1,0 +1,103 @@
+/* 기본 틀 : 폰트,여백 설정 */
+*{
+    font-family: 'NanumSquareRoundBold';
+    margin:0;
+}
+.notice {
+    margin: 32px 20px 0px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* header 부분 */
+.notice .notice_header{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+/* header 왼쪽 부분: 뒤로가기 아이콘, 페이지 제목 */
+.notice .notice_hleft {
+    display: flex;
+}
+.notice .notice_hleft .notice_pagetitle{
+    padding-left: 15px;
+}
+
+/* 게시물 상단 부분 (회색 직선 기준으로 윗부분) notice_top_part */
+.notice_top_part {
+    display: flex;
+    border-bottom: 1px solid rgba(112,112,112,0.14);
+    padding-bottom: 11.5px;
+    margin-bottom: 14.5px;
+}
+/* 게시물 상단 부분 개별 항목 - 프로필 사진/이름/학과/업로드시간/엠비티아이 */
+.notice_basic_info {
+    padding-top: 5px;
+    padding-right: 22px;
+}
+
+.time {
+    font-size: 10px;
+    color: rgba(0,0,0,0.42);
+}
+
+.mbti {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 0.5px 9px 0px;
+    border: 1px solid rgba(207,207,207);
+    border-radius: 9px;
+    height: fit-content;
+}
+/* 게시물 하단 부분 (회색 직선 기준으로 아랫부분) notice_bottom_part */
+.notice_bottom_part .notice_item {
+    padding-left:8px;
+    
+}
+.notice_item_title {
+    padding-bottom: 16px;
+}
+.notice_bottom_part .notice_item_content {
+    font-size: 13px;
+    padding-bottom: 27px;
+    font-weight: lighter;
+    
+}
+/* 게시물 하단 부분 - 일시/장소 포함 밥약 신청박스 */
+.notice_promise_info {
+    border: 1px solid rgba(112,112,112,0.14);
+    border-radius: 15px;
+    padding:15px;
+    align-items: center;
+    
+}
+
+.notice_bottom_part > div.notice_promise_info > div:nth-child(1){
+    display: flex;
+    padding-bottom: 21px;
+}
+
+.notice_bottom_part > div.notice_promise_info > div:nth-child(1) .date, .place{
+    color: rgba(0,0,0,0.5);
+}
+.notice_bottom_part > div.notice_promise_info > div:nth-child(2){
+    display: flex;
+    padding-bottom: 27px;
+}
+
+.notice_bottom_part > div.notice_promise_info > div:nth-child(1) .date_text, .place_text{
+    margin: 0;
+    position: fixed;
+    left: 90px;
+}
+
+/* 게시물 하단 부분 - 밥약신청 버튼 */
+.notice_btn {
+    border: 0; 
+    border-radius: 10px;
+    background-color: rgba(255,206,0);
+    color:#fff;
+    font-size: 14px;
+}

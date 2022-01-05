@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물관리</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="./manage.css">
+</head>
+<body>
+    <!--게시물 관리 페이지 전체 틀 (기본 margin)-->
+    <div class="manage">
+        <!-- header 헤더 : 뒤로가기 아이콘, 페이지 제목, 닫기 아이콘-->           
+        <div class="manage_header">
+            <div class="manage_hleft">
+                <img src="image/drawable-xxxhdpi/icon_back_arrow.png" style=" margin-top:2.12px; width: 15px; height: 14px; padding-right: 15px;">게시물 관리
+            </div>
+            <div class="manage_hright">
+                <img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width: 14px; height: 14px;">
+            </div>
+        </div>
+        <!-- 게시판 유형 (밥약게시판/커리어게시판) -->
+        <div class="manage_type"> 
+            <li><a href="manage.html"><img src="image/drawable-xxxhdpi/icon_01.png"  style="vertical-align:middle; height: 18px; padding-right: 5%; padding-bottom: 4px;">밥약게시판</a></li>
+            <li><a href="manage_career.html"><img src="image/drawable-xxxhdpi/임시_로고.png" style="vertical-align:middle; height: 17px; padding-right: 5%; padding-bottom: 4px;">커리어게시판</a></li>
+        </div>
+        <!-- 게시물 전체 틀-->
+        <div class="manage_content">
+            <!-- 개별 게시물 -->
+            <div class="manage_content_item">
+                <!-- 게시물 제목 / 게시 날짜 -->
+                <div class="manage_content_litem">
+                    <div class="manage_litem_text">쪽문 밥</div>
+                    <div class="manage_litem_date">21.03.05</div>
+                </div>
+                <!-- 게시물 대기/마감 여부 -->
+                <div class="manage_content_ritem">
+                    <div class="manage_state_wait">
+                        밥약 대기
+                    </div>
+                </div>
+            </div>
+            <!-- 개별 게시물 -->
+            <div class="manage_content_item">
+                <!-- 게시물 제목 / 게시 날짜 -->
+                <div class="manage_content_litem">
+                    <div class="manage_litem_text">밥 같이 드실 분~</div>
+                    <div class="manage_litem_date">21.03.05</div>
+                </div>
+                <!-- 게시물 대기/마감 여부 -->
+                <div class="manage_content_ritem">
+                    <div class="manage_state_done">
+                        밥약 마감
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

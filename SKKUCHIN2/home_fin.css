@@ -1,0 +1,237 @@
+*{
+    font-family: 'NanumSquareRoundBold';
+    margin:0;
+}
+
+.home {
+    margin: 32px 20px 0px ; 
+    z-index: 1;
+}
+
+/* home_header 헤더부분 */
+.home .home_header {
+    padding-top: 32px; 
+    top:0;
+    display: flex;
+    justify-content: space-between; 
+    width: 91%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.home_header .home_icons {
+    display: flex;
+    padding-right: 20px;
+}
+
+/* home_searchbar 검색창 */
+.home_searchbar {
+    width: 90%;
+    left: 20px;
+    margin-right: 20px;
+    z-index: 1;
+    top: 75.42px;
+    padding-top: 5.58px;
+    position: fixed;
+    height: 45px;
+    background-color: #fff; 
+    display: flex;
+    z-index: 1;
+}
+
+.home_searchbar input {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FCF8E7;
+    border:0;
+}
+
+.home_searchbar i{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+}
+
+.home_searchbar input {
+    padding-left: 49px;
+}
+
+/* 게시글 전체 리스트 틀 */
+/* 첫번째 게시글 위치 고정 */
+.home_content > ul:nth-child(1) > div {
+    margin-top:152px;
+}
+.home .home_content ul {
+    margin-top:26px;
+    padding-left:0px;
+    width: 100%;
+}
+
+/* 게시글 개별 아이템 */
+.home_content ul .home_item {
+    border: 0.05px solid #EDEDED;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* top_part => 게시글 상단 부분 (프로필 사진,이름,학과,엠비티아이,시간) */
+.top_part {
+    display: flex;
+    border-bottom: 0.05px solid #EDEDED;
+    padding-bottom: 11.5px;
+}
+
+.top_part .basic_info {
+    padding: 3px 13px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.top_part .basic_info .time {
+    font-size: 10px;
+    color: rgba(0,0,0,0.42);
+}
+
+.top_part i {
+    margin-left: auto;
+    padding-right: 13px;
+    color: #BEBEBE;
+}
+
+.top_part .mbti {
+    background-color: #FFCE00;
+    height: fit-content;
+    margin-top: 2px;
+    padding: 2px 7.5px;
+    border-radius: 15px;
+    font-size: 13px;
+    color: #fff;
+}
+/* bottom_part => 게시글 하단 부분 (게시글 내용,일시,장소) */
+.bottom_part {
+    font-weight: bold;
+    padding: 14.5px 6px 6px;
+}
+
+.bottom_part .promise_info {
+    display: flex;
+    padding-top:20px;
+    font-size: 13px;
+    padding-bottom: 21px;
+}
+
+
+.bottom_part > div > div:nth-child(1) {
+    position: absolute;
+    left: 10%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.5);
+}
+.bottom_part > div > div:nth-child(3){
+    position: absolute;
+    left: 52%;
+    color: rgba(0,0,0,0.5);
+}
+#date {
+    position: absolute;
+    left: 23.5%;
+}
+#place {
+    position: absolute;
+    left: 65%;
+    margin-right: 35px;
+
+}
+
+
+/* sidebar */
+#checkbox {
+    display: none;
+}
+  
+/* Menu(사이드바 호출) 버튼 */
+.btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+  
+  
+.sidebar {
+    top:0%;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+    transform: translateX(+100%);
+    right: 0;
+    border-radius: 15px;
+    z-index: 100;
+      
+}
+
+
+/* 프로필 */
+/* 프로필 - 이미지 */
+.sidebar .profile_img {
+    width: 80%;
+    margin: 0 10%;
+    z-index: 10;
+    border-bottom: 1px solid #d4d4d4;
+    align-items: center;
+}
+.home_my_info > div > img {
+    width:100%;
+    margin: 94px 31% 19px;
+}
+
+
+  /* 프로필 - 00님 */
+.sidebar .home_my_info h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #444444;
+    padding-bottom: 46.5px;
+}
+  /* Sidebar - 메뉴항목 리스트 틀  */
+.sidebar ul {
+    padding-top: 31.5px;
+    left:0;
+    list-style-type: none;
+}
+/* Sidebar - 메뉴 개별항목 (밥약게시판/채팅목록/마이페이지) */
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: #585759;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+.sidebar > ul > a > li > img {
+    vertical-align: middle;
+    padding-bottom: 1px;
+}
+.sidebar .log_out {
+    position: fixed;
+    right: 40px;
+    bottom: 6%;
+    font-size: 13px;
+    color:#444;
+    opacity: 0.42;
+}
+
+/* 메뉴 아이콘 클릭-> 체크버튼 활성화 -> 사이드바 슬라이드 */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+

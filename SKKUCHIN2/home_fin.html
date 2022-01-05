@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈_최종</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="./home_fin.css">
+</head>
+<body>
+    <!--홈 페이지 전체 틀 (기본 margin)-->
+    <div class="home">
+        <div>
+            <!-- header 헤더 -->
+            <div class="home_header">
+                <div class="home_pagetitle">
+                    <img src="image/drawable-xxxhdpi/home_logo.png" style="width:82px; height:18.43px; margin-bottom:20px;">
+                </div>
+                <div class="home_icons">
+                    <img src="image/drawable-xxxhdpi/icon_alarm.png" style="vertical-align:middle; width:16.67px; height:20px; margin-bottom:20px; padding-right: 10px;">
+                    <!--<i class="fa fa-bell" aria-hidden="true" style="color:#FFCE00; padding-right:10.38px;"></i>-->           
+                    <div>
+                        <!-- 사이드바 활성화 아이콘 버튼 -->
+                        <input type="checkbox" id="checkbox">
+                        <label class="btn" for="checkbox"><img src="image/drawable-xxxhdpi/icon_menu_bar.png" style="vertical-align:middle; width:20.16px; height:14px;"></label> 
+                        <!-- sidebar 사이드바 -->
+                        <div class="sidebar">
+                            <input type="checkbox" id="checkbox">
+                            <label class="btn" for="checkbox" style="margin-top: 32px; margin-left: 22px;"><img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width:13px; height:14px;"></label>
+                            <!--프로필 (이미지, 이름)-->
+                            <div class="home_my_info">
+                                <div class="profile_img">
+                                    <img src="img/mbti.png" alt="프로필_img" style="width:40%; height:40%">
+                                <h3>홍길동님</h3>
+                                </div>
+                            </div>
+                            <!--게시판 목록-->
+                            <ul>
+                                <a href="Bobwithme.html"><li><img src="image/drawable-xxxhdpi/icon_01.png" style="width:15.14px; height=18.17px; padding-left: 3.3px; padding-right: 17.56px;">밥약게시판</li></a>
+                                <a href="chat.html"><li><img src="image/drawable-xxxhdpi/icon_02.png" style="width:21.76px; height=17.18px; padding-right: 14.24px;">커리어게시판</li></a>
+                                <a href="chat.html"><li><img src="image/drawable-xxxhdpi/icon_03.png" style="width:18.76px; height=18.76px;  padding-left: 2px; padding-right: 15.24px;">채팅목록</li></a>
+                                <a href="mypage.html"><li><img src="image/drawable-xxxhdpi/icon_04.png" style="width:15.47px; height=18.55px; padding-left: 3.3px; padding-right: 17.56px;">마이페이지</li></a>
+                            </ul>
+                            <div class="log_out">
+                                로그아웃 <img src="image/drawable-xxxhdpi/icon_logout.png" style="vertical-align: middle; width:16.56px; height=13.24px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- searchbar 검색창-->
+        <div class="home_searchbar">
+            <input type="text" placeholder="글 제목, 내용, 해시태그" >
+            <i class="fa fa-search" aria-hidden="true" style="color:#FFCE00;"></i>
+        </div>
+        <!-- content 밥약 게시글 전체 틀-->
+        <div class="home_content">
+            <ul>
+                <!-- item 밥약 개별 게시글 -->
+                <div class="home_item">
+                    <div class="top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
+                        <div class="basic_info">
+                            홍홍길 / 사회학과
+                            <div class="time">
+                                21분전
+                            </div>
+                        </div>
+                        <div class="mbti"> ENFP </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                    <div class="bottom_part">
+                        같이 밥 드실 분 계실까요? 아무나 환영
+                        <div class="promise_info">
+                            <div><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
+                            <div id="date">오늘 16시 40분</div>
+                            <div><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
+                            <div id="place">같이 정해요</div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <!-- item 밥약 개별 게시글 -->
+                <div class="home_item">
+                    <div class="top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
+                        <div class="basic_info">
+                            홍홍길 / 사회학과
+                            <div class="time">
+                                21분전
+                            </div>
+                        </div>
+                        <div class="mbti"> ENFP </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                    <div class="bottom_part">
+                        같이 밥 드실 분 계실까요? 아무나 환영
+                        <div class="promise_info">
+                            <div><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
+                            <div id="date">오늘 16시 40분</div>
+                            <div><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
+                            <div id="place">같이 정해요</div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <!-- item 밥약 개별 게시글 -->
+                <div class="home_item">
+                    <div class="top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
+                        <div class="basic_info">
+                            홍홍길 / 사회학과
+                            <div class="time">
+                                21분전
+                            </div>
+                        </div>
+                        <div class="mbti"> ENFP </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                    <div class="bottom_part">
+                        같이 밥 드실 분 계실까요? 아무나 환영 컴오오오오온
+                        <div class="promise_info">
+                            <div class="promise_type"><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
+                            <div id="date">오늘 16시 40분</div>
+                            <div class="promise_type"><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
+                            <div id="place">같이 정해요우ㅜ우우우우우</div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <!-- item 밥약 개별 게시글 -->
+                <div class="home_item">
+                    <div class="top_part">
+                        <img src="image/drawable-xxxhdpi/profile01.png" width="37px"; height="37px";>
+                        <div class="basic_info">
+                            홍홍길 / 사회학과
+                            <div class="time">
+                                21분전
+                            </div>
+                        </div>
+                        <div class="mbti"> ENFP </div>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                    <div class="bottom_part">
+                        같이 밥 드실 분 계실까요? 아무나 환영
+                        <div class="promise_info">
+                            <div><img src="image/drawable-xxxhdpi/icon_time01.png" style="width: 12px; height: 12px; vertical-align: middle; padding-right: 4px;">일시</div>
+                            <div id="date">오늘 16시 40분</div>
+                            <div><img src="image/drawable-xxxhdpi/icon_place02.png" style="width: 10px; height: 12px; vertical-align: middle; padding-right: 4px;">장소</div>
+                            <div id="place">같이 정해요</div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    <!--네브바-->
+    <div class="navbar"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* 기본 틀 : 폰트,여백 설정 */
+*{
+    font-family: 'NanumSquareRoundBold';
+    margin:0;
+}
+
+/* a태그 (게시판 이동) 하이퍼링크 deco 제거 */
+a { color: black; text-decoration:none }
+
+.manage {
+    margin: 32px 20px 0px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* header 부분 */
+.manage_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    font-size: 18px;
+}
+
+/* 게시판 유형 (밥약게시판/커리어게시판) */
+.manage_type{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* 게시판 유형 - 현재 선택 밥약게시판 */
+.manage_type li:first-child {
+    width: 50%;
+    border-bottom: rgb(255, 206, 0) 3px solid;
+    padding-bottom: 3px;
+}
+/* 게시판 유형 - 현재 선택 X 커리어게시판 */
+.manage_type li:last-child {
+    width: 50%;
+    border-bottom: rgba(0, 0, 0,0.07) 3px solid;
+    padding-bottom: 3px;
+    color: rgb(187, 187, 187);
+}
+
+.manage_type li:last-child a {
+    color: rgb(187, 187, 187);
+}
+
+/* 개별 게시물 전체 틀 */
+.manage_content_item {
+    padding: 15px 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(237, 237, 237) 1px solid;
+    font-weight: bold;
+}
+
+/*  개별 게시물 업로드 날짜 - date */
+.manage_litem_date {
+    padding-top: 12px;
+    padding-bottom: 15px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+/*  개별 게시물 대기/마감 여부 - 대기 중 state_wait */
+.manage_content_ritem .manage_state_wait {
+    padding: 11px 21px;
+    background-color: rgb(255, 206, 0);
+    color: #fff;
+    border-radius: 15px;
+}
+/*  개별 게시물 대기/마감 여부 - 마감 state_done */
+.manage_content_ritem .manage_state_done {
+    padding: 11px 21px;
+    background-color: rgb(253, 114, 62);
+    color: #fff;
+    border-radius: 15px;
+}

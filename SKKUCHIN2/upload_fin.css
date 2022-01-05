@@ -1,0 +1,80 @@
+/* 기본 틀*/
+*{
+    font-family: 'NanumSquareRoundBold';
+    margin:0;
+}
+
+.upload {
+    margin: 32px 20px 0px; 
+    display: block;
+}
+
+/* header 헤더부분 */
+.upload .upload_header {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing : border-box;
+}
+
+/* content 밥약신청 폼 전체 틀 */
+.upload_content{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgba(0,0,0,0.9);
+    margin-top: 25px;
+
+}
+/* content 밥약신청 폼 subtitle : 일시/장소 간격 margin-top 설정 */
+.upload_content > div > form > .upload_subtitle {
+    margin-top: 12px;
+}
+/* content 밥약신청 폼 subtitle 시작위치 설정 */
+.upload_content > div > form > div {
+    padding-left: 8px;
+}
+
+/* content 밥약신청 폼 기본 틀 */
+.upload_content > div > form{
+    position: relative;
+    display: block;
+}
+/* form input (제목/일시/장소) 입력 부분 */
+.upload_content > div > form > input {
+    font-size: 14px;
+    width: 100%;
+    color:rgba(0,0,0,0.3);
+    padding: 12.5px 15px;
+    margin-top: 7px;
+    box-sizing : border-box;
+    border: 0; 
+    border-radius: 15px;
+    background-color: rgba(255,206,0,0.07);
+}
+/* form textarea (본문) 입력 부분 */
+form textarea {
+    font-size: 14px;
+    font-weight: bold;
+    color:rgba(0,0,0,0.3);
+    padding: 16px 15px 0px;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing : border-box;
+    border: 0; 
+    border-radius: 15px;
+    background-color: rgba(255,206,0,0.07);
+}
+/* 완료 버튼 */
+.upload_btn {
+    border: 0; 
+    border-radius: 15px;
+    background-color: rgba(255,206,0);
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 3%;
+    margin-top: 10%;
+}

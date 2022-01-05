@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밥약게시판</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="./notice.css">
+</head>
+<body>
+    <!--밥약 신청 페이지 전체 틀 (기본 margin)-->
+    <div class="notice">
+        <!-- header 헤더 : 뒤로가기 아이콘, 페이지 제목, 설정 아이콘 -->           
+        <div class="notice_header">
+            <div class="notice_hleft">
+                <img src="image/drawable-xxxhdpi/icon_back_arrow.png" style="margin-top:2.12px; width: 15px; height: 14px; padding-right: 15px;">밥약 게시판
+            </div>
+            <div class="notice_hright">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+        </div>
+        <!-- 게시글 틀 -->
+        <div class="notice_item">
+            <!-- 게시물 상단 부분 (회색 직선 기준으로 윗부분) notice_top_part -->
+            <div class="notice_top_part">
+                <img src="image/drawable-xxxhdpi/profile01.png" style="vertical-align:middle; width:37px; height:37px; padding-right:10px;">
+                <div class="notice_basic_info">
+                    홍홍길 / 사회학과
+                    <div class="time">
+                        21분전
+                    </div>
+                </div>
+                <div class="mbti" > ENFP </div>
+            </div>
+            <!-- 게시물 하단 부분 (회색 직선 기준으로 아랫부분) notice_bottom_part -->
+            <div class="notice_bottom_part">
+                <!-- 하단 부분 : 게시글 제목 / 본문 -->
+                <div class="notice_item">
+                    <div class="notice_item_title">같이 밥 드실 분 계실까요? 아무나 환영</div>
+                    <div class="notice_item_content">학교 근처 오늘 저녁 같이 먹어요~</div>
+                </div>
+                <!-- 하단 부분 : 일시/장소 포함 밥약 신청박스 -->
+                <div class="notice_promise_info">
+                    <!-- 일시 -->
+                    <div>
+                        <div class="date"><img src="image/drawable-xxxhdpi/icon_time02.png" style="vertical-align:middle; width: 12px; margin-right: 6px;">일시</div>
+                        <div class="date_text">오늘 16시 40분</div>
+                    </div>
+                    <!-- 장소 -->
+                    <div>
+                        <div class="place"><img src="image/drawable-xxxhdpi/icon_place-1.png" style="vertical-align:middle; width: 10px; padding-left: 1px; margin-right: 7px;">장소</div>
+                        <div class="place_text">같이 정해요</div>
+                    </div> 
+                    <!-- 밥약 신청버튼-->
+                    <button class="notice_btn" style="width: 100%; height: 37px;">
+                        밥약 신청하기
+                        <img src="image/drawable-xxxhdpi/icon_send01.png" style="vertical-align:middle; width: 17px; padding-left: 20px;">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
