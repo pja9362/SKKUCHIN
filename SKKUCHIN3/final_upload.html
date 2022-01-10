@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="./final_upload.css">
+</head>
+<body>
+    <!--밥약 신청 페이지 전체 틀 (기본 margin)-->
+    <div class="upload">
+        <!-- header 헤더 -->
+        <div class="upload_header">
+            <div class="upload_hleft">밥약 신청서</div>
+            <img src="image/drawable-xxxhdpi/icon_close.png" style="vertical-align:middle; width: 14px; height: 14px;">
+        </div>
+        <!-- content 밥약신청 폼 전체 틀 -->
+        <div class='upload_content'>
+            <!-- content 밥약신청 폼 (제목/본문/일시/장소) -->
+            <div class='upload_content_main'>
+                <form> 
+                    <div>글쓰기</div><input type="text" name="up_title" placeholder="제목">
+                    <textarea name="up_text" id="" cols="30" rows="10" placeholder="본문 내용을 입력해주세요&#13;&#10;밥약 외의 다른 목적의 글은 경고없이 삭제될 수 있습니다."></textarea>
+                    <div class="upload_subtitle">일시</div><input type="text" name="utime">
+                    <div class="upload_subtitle">장소</div><input type="text" name ="uplace">
+                </form>
+            </div>
+            <!-- 완료 버튼 -->
+            <button class="upload_btn">완료</button>
+        </div>
+    </div>
+</body>
+</html>
+

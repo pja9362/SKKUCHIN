@@ -1,0 +1,86 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+*{
+    font-family: 'NN';
+    margin:0;
+}
+
+.manage {
+    margin: 32px 20px 0px; 
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* header 부분 */
+.manage_header {
+    top:0;
+    left: 20px;
+    padding-top: 32px; 
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    right: 20px;
+}
+
+
+/* 개별 게시물 전체 틀 */
+/* 첫번째 게시물 위치 고정 */
+.manage_content > div:nth-child(1) {
+    margin-top: 18%;
+}
+.manage_content_item {
+    padding: 15px 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(237, 237, 237) 1px solid;
+}
+
+/*  개별 게시물 업로드 날짜 - date */
+.manage_litem_date {
+    padding-top: 11px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+/*  개별 게시물 대기/마감 여부 - 대기 중 state_wait */
+.manage_content_ritem .manage_state_wait {
+    padding: 11px 21px;
+    background-color: rgb(255, 206, 0);
+    color: #fff;
+    border-radius: 15px;
+}
+
+/*  개별 게시물 대기/마감 여부 - 마감 state_done */
+.manage_content_ritem .manage_state_done {
+    padding: 11px 21px;
+    background-color: rgb(253, 114, 62);
+    color: #fff;
+    border-radius: 15px;
+}
+
+button {
+    font-size: 15px;
+}

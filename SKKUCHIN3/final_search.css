@@ -1,0 +1,79 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+*{
+    font-family: 'NN';
+    margin:0;
+}
+/* a태그 (게시판 이동) 하이퍼링크 deco 제거 */
+a { color: black; text-decoration:none }
+
+.search {
+    margin: 32px 20px 0px; 
+    font-size: 15px;
+}
+
+/* header 부분 */
+.search_header {
+    display: flex;
+    margin-right: 0px;
+    font-size: 18px;
+}
+/* search_searchbar 검색창 */
+.search .search_header .search_bar {
+    /* display: flex; */
+    position: relative;
+    top: -13px;
+    width: 100%;
+}
+
+.search .search_header .search_bar input {
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    color:rgba(0,0,0,0.3);
+    padding: 12.5px 20px;
+    box-sizing : border-box;
+    top: 0;
+    border: 0; 
+    border-radius: 15px;
+    background-color: rgba(255,206,0,0.07);
+    font-weight: 400;
+}
+.search .search_header .search_btn {
+    text-decoration: none;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+
+/* content 본문 : 검색 꾸실 아이콘, 검색 유도 문구 */
+.search_content img{
+    align-items: center;
+}
+
+.search_icon_txt {
+    text-align: center;
+    color:rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
