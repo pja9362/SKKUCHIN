@@ -1,0 +1,163 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+*{
+    font-family: 'NN';
+    margin:0;
+}
+/* a태그 (게시판 이동) 하이퍼링크 deco 제거 */
+a { color: black; text-decoration:none }
+
+.search {
+    margin: 32px 20px 0px; 
+    font-size: 15px;
+}
+
+/* header 부분 */
+.search_header {
+    display: flex;
+    margin-right: 0px;
+    font-size: 18px;
+}
+/* search_searchbar 검색창 */
+.search .search_header .search_bar {
+    /* display: flex; */
+    position: relative;
+    top: -13px;
+    width: 100%;
+}
+
+.search .search_header .search_bar input {
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    color:rgba(0,0,0,0.3);
+    padding: 12.5px 20px;
+    box-sizing : border-box;
+    top: 0;
+    border: 0; 
+    border-radius: 15px;
+    background-color: rgba(255,206,0,0.07);
+    font-weight: 400;
+}
+.search .search_header .search_btn {
+    text-decoration: none;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+
+/* 게시글 전체 리스트 틀 */
+
+/* 게시글 개별 아이템 */
+.search .home_content ul {
+    margin-top:26px;
+    padding-left:0px;
+    width: 100%;
+}
+
+.home_content ul .home_item {
+    border: 0.05px solid #EDEDED;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.home_content > ul:last-child > div {
+    margin-bottom:26px;
+}
+#home_top_part {
+    display: flex;
+    border-bottom: 0.05px solid #EDEDED;
+}
+#home_top_part #home_info{
+    display: flex;
+}
+#home_top_part #hname {
+    padding: 3px 10px 0;
+    font-size: 15px;
+}
+
+#home_top_part #hmbti {
+    background-color: #FFCE00;
+    height: fit-content;
+    margin: 2px 5px 0 0;
+    padding: 1px 7.5px;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 900;
+}
+#home_top_part #hnumber {
+    background-color: #fff;
+    height: fit-content;
+    margin-top: 2px;
+    padding: 0px 4.5px;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #FFCE00;
+    border: 1px solid #FFCE00;
+    font-weight: 900;
+}
+#home_top_part #hmajor, #htime {
+    font-size: 10px;
+    color: rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+#home_top_part #htime {
+    margin-left: auto;
+}
+
+/* home_bottom_part => 게시글 하단 부분 (게시글 내용,일시,장소) */
+.home_bottom_part {
+    padding: 14.5px 6px 6px;
+}
+
+.home_bottom_part .home_promise_info {
+    display: flex;
+    padding-top:20px;
+    font-size: 13px;
+    padding-bottom: 21px;
+}
+
+.home_bottom_part > div > div:nth-child(1) {
+    position: absolute;
+    left: 10%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.5);
+}
+.home_bottom_part > div > div:nth-child(3){
+    position: absolute;
+    left: 52%;
+    color: rgba(0,0,0,0.5);
+}
+#hdate {
+    position: absolute;
+    left: 23.5%;
+}
+#hplace {
+    position: absolute;
+    left: 65%;
+    margin-right: 40px;
+}
