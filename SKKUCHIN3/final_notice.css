@@ -24,6 +24,8 @@
     font-family: 'NN';
     margin:0;
 }
+/* a태그 (게시판 이동) 하이퍼링크 deco 제거 */
+a { color: black; text-decoration:none }
 
 .notice{
     margin: 32px 20px 0px; 
@@ -143,4 +145,44 @@
     color:#fff;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* header 헤더부분 - 설정버튼 */
+#checkbox {
+    display: none;
+}
+.btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+.notice_header > label {
+    background-color: #fff;
+    top: 32px;
+    right: 20px;
+}
+
+.notice_menu ul{
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #fff;
+    list-style: none;
+    visibility: hidden;
+    position: fixed;
+    width: 45%;
+    top: 32px;
+    right: 20px;
+    z-index: 100;
+    padding-left: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.32);
+}
+.notice_menu ul li {
+    padding: 12px 0;
+    padding-left: 17px;
+}
+.notice_menu ul li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+#checkbox:checked ~ .notice_menu ul {
+    visibility: visible;
 }

@@ -1,0 +1,89 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+*{
+    font-family: 'NN';
+    margin:0;
+}
+
+.profile {
+    margin: 32px 20px 0px; 
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* header 부분 */
+.profile_header {
+    top:0;
+    left: 20px;
+    padding-top: 32px; 
+    position: fixed;
+    display: flex;
+    font-size: 18px;
+}
+
+/* 프로필 상단 부분 profile_top_part  */
+.profile_top_part {
+    margin:84px 0 36px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile_name {
+    margin: 12px 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.profile_intro {
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 프로필 하단 부분 profile_bottom_part  */
+.profile_bottom_part {
+    padding: 13px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.46);
+    border-top: 1px solid rgba(112,112,112,0.14);
+    border-bottom: 1px solid rgba(112,112,112,0.14);
+    padding-left: 23%;
+}
+.profile_bottom_part div {
+    display: flex;
+}
+
+.profile_major, .profile_stuNum, .profile_mbti {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #E9E9E9;
+}
+.profile_mbti{
+    margin-left: 19px;
+}
+.profile_bottom_part > div:nth-child(1){
+    margin-bottom: 6.5px;
+}
