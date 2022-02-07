@@ -1,0 +1,308 @@
+/* 기본 틀 : 폰트,여백 설정 */
+@font-face {
+    src: url('font/NanumSquareRoundOTFL.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 100;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFR.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 400;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 700;
+}
+@font-face {
+    src: url('font/NanumSquareRoundOTFEB.otf') format("truetype");
+    font-family: "NN";
+    font-weight: 900;
+}
+
+*{
+    font-family: 'NN';
+    margin:0;
+}
+
+.home {
+    margin: 32px 20px 0px ; 
+    z-index: 1;
+    font-weight: 700;
+}
+
+/* home_header 헤더부분 */
+.home .home_header {
+    top:0;
+    left: 20px;
+    padding-top: 32px; 
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    right: 40px;
+    background-color: #fff;
+    z-index: 10;
+}
+/* home_header 헤더부분 - 우측 아이콘 정렬 */
+.home_header .home_icons {
+    display: flex;
+}
+/* home_header 헤더부분 - 우측 메뉴버튼 */
+.home_icons > div > label {
+    background-color: #fff;
+    padding: 32px 0 24px;
+    top: 0;
+}
+
+/* home_searchbar 검색창 */
+.home_searchbar {
+    z-index: 1;
+    top: 73px;
+    padding-top: 7px;
+    position: sticky;
+    width: 100%;
+    height: 46px;
+    background-color: #fff; 
+    display: flex;
+}
+
+.home_searchbar input {
+    width: 100%;
+    height: 100%;
+    padding-left: 49px;
+    font-size: 14px;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FCF8E7;
+    border:0;
+}
+
+/* 게시글 전체 리스트 틀 */
+/* 게시글 전체 틀 margin */
+.home_content {
+    margin: 18% 0 22%;
+}
+/* 게시글 개별 아이템 */
+.home .home_content ul {
+    margin-top:26px;
+    padding-left:0px;
+    width: 100%;
+}
+
+.home_content ul .home_item {
+    border: 0.05px solid #EDEDED;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.home_content > ul:last-child > div {
+    margin-bottom:26px;
+}
+#home_top_part {
+    display: flex;
+    border-bottom: 0.05px solid #EDEDED;
+}
+#home_top_part #home_info{
+    display: flex;
+}
+#home_top_part #hname {
+    padding: 3px 10px 0;
+    font-size: 15px;
+}
+
+#home_top_part #hmbti {
+    background-color: #FFCE00;
+    height: fit-content;
+    margin: 2px 5px 0 0;
+    padding: 1px 7.5px;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 900;
+}
+#home_top_part #hnumber {
+    background-color: #fff;
+    height: fit-content;
+    margin-top: 2px;
+    padding: 0px 4.5px;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #FFCE00;
+    border: 1px solid #FFCE00;
+    font-weight: 900;
+}
+#home_top_part #hmajor, #htime {
+    font-size: 10px;
+    color: rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+#home_top_part #htime {
+    margin-left: auto;
+}
+
+/* home_bottom_part => 게시글 하단 부분 (게시글 내용,일시,장소) */
+.home_bottom_part {
+    padding: 14.5px 6px 6px;
+}
+
+.home_bottom_part .home_promise_info {
+    display: flex;
+    padding-top:20px;
+    font-size: 13px;
+    padding-bottom: 21px;
+}
+
+.home_bottom_part > div > div:nth-child(1) {
+    position: absolute;
+    left: 10%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.5);
+}
+.home_bottom_part > div > div:nth-child(3){
+    position: absolute;
+    left: 52%;
+    color: rgba(0,0,0,0.5);
+}
+#hdate {
+    position: absolute;
+    left: 23.5%;
+}
+#hplace {
+    position: absolute;
+    left: 65%;
+    margin-right: 40px;
+}
+
+/* Sidebar */
+#checkbox {
+    display: none;
+}
+  
+/* Menu(사이드바 호출) 버튼 */
+.btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+  
+.sidebar {
+    font-weight: 400;
+    top:0%;
+    background-color: #ffffff;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+    transform: translateX(+100%);
+    right: 0;
+    z-index: 999;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Sidebar 사이드바 상단 프로필 */
+/* 프로필 - 이미지 */
+.sidebar .profile_img {
+    z-index: 999;
+    margin: 95px 0 23px;
+}
+/* 프로필 이미지 동그라미 액자 */
+.sidebar .profile_img > center > img {
+    width: 96px; 
+    height: 96px;
+    border-radius: 48px;
+}
+
+/* 프로필 - 00님 */
+.sidebar .home_my_info h3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #444444;
+    padding-bottom: 46.5px;
+    border-bottom: 1px solid #d4d4d4;
+}
+/* Sidebar 사이드바 하단 - 메뉴항목 리스트 전체 틀  */
+.sidebar ul {
+    padding-top: 31.5px;
+    left:16.5px;
+    list-style-type: none;
+    position: static;
+}
+/* 메뉴 개별항목 (밥약게시판/커리어게시판//채팅목록/마이페이지) */
+.sidebar ul a {
+    list-style-type: none;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: #585759;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.sidebar > ul > a > li > img {
+    vertical-align: middle;
+    padding-bottom: 1px;
+}
+.sidebar .log_out {
+    position: fixed;
+    right: 40px;
+    bottom: 6%;
+    font-size: 13px;
+    color:#444;
+    opacity: 0.42;
+}
+
+/* 메뉴 아이콘 클릭-> 체크버튼 활성화 -> 사이드바 슬라이드 */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+#checkbox:checked ~ .background {
+    display: block;
+}
+.background {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    background-color: rgba(0,0,0,0.35);
+    display: none;
+}
+.write_btn {
+    position: fixed;
+    top: 81%;
+    right: 20px;
+    z-index: 1;
+}
+
+/* 하단 네브바 navbar */
+.bottom_navbar ul {
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    list-style-type: none;
+    display: flex;
+    border: 1px solid #E1E1E1;
+    border-radius: 15px 15px 0 0;
+}
+
+.bottom_navbar > ul > a:nth-child(1) > li > img {
+    padding: 13.28px 30px 8px;
+}
+
+.bottom_navbar > ul > a:nth-child(2) > li > img {
+    padding: 13.28px 30px 5.28px;
+}
+.bottom_navbar > ul > a:nth-child(3) > li > img {
+    padding: 13.28px 30px 5.28px;
+}
